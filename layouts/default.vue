@@ -1,8 +1,18 @@
 <template>
-  <div>
+  <div class="relative">
+    <SocialNav class="absolute top-0" />
     <nuxt />
+    <MobileNavBar class="fixed bottom-0 md:hidden" />
   </div>
 </template>
+
+<script>
+import MobileNavBar from '../components/MobileNavBar'
+import SocialNav from '../components/SocialNav'
+export default {
+  components: { MobileNavBar, SocialNav }
+}
+</script>
 
 <style>
 html {
