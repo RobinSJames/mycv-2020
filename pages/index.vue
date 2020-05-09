@@ -6,11 +6,21 @@
       >
         <!-- <Logo /> -->
         <div class="h-full grid grid-cols-1 grid-rows-4">
-          <div class="row-span-3 pt-20 p-4 my-auto">
-            <p class="text-white">
-              Hi, I'm Stuart McCulloch (aka Robin S. James or robinhood)
+          <div class="font-mono text-xl row-span-3 pt-20 p-1/12 my-auto">
+            <p class="text-white mb-8">
+              Hi, I'm Stuart Robin McCulloch.
             </p>
-            <p>I'm a Web Developer and <span>I shape experiences</span></p>
+            <div class="">
+              <div class="flex">
+                <div>
+                  <p>
+                    I'm a Web Developer and I {{ display
+                    }}<span class="cursor tracking-tighter">|</span>
+                  </p>
+                  <!-- <p class="cursor"></p> -->
+                </div>
+              </div>
+            </div>
           </div>
           <div class="flex md:items-center row-span-1">
             <ScrollMore />
@@ -29,8 +39,64 @@ import ScrollMore from '~/components/ScrollMore'
 import Portfolio from '~/components/Portfolio'
 // import Logo from '~/components/Logo'
 export default {
-  components: { ScrollMore, Portfolio }
+  components: { ScrollMore, Portfolio },
+  data: () => ({
+    texts: ['build websites...', 'build experiences...?', 'shape experiences.'],
+    speed: 100,
+    display: ''
+  }),
+  mounted() {
+    this.writeLoop()
+  },
+  methods: {
+    delay(ms) {
+      return new Promise((resolve) => {
+        setTimeout(() => {
+          resolve()
+        }, ms)
+      })
+    },
+    async type(txt = 'Test') {
+      for (let i = 0; i < txt.length; i++) {
+        this.display += txt.charAt(i)
+        await this.delay(this.speed)
+      }
+    },
+    async reversType(txt = 'Session') {
+      for (let i = txt.length; i > 0; i--) {
+        this.display = this.display.slice(0, -1)
+        await this.delay(this.speed)
+      }
+    },
+    async writeLoop() {
+      for (let i = 0; i < this.texts.length; i++) {
+        await this.type(this.texts[i])
+        await this.delay(4000)
+        if (i !== this.texts.length - 1) {
+          await this.reversType(this.texts[i])
+          await this.delay(1000)
+        }
+      }
+    }
+  }
 }
 </script>
 
-<style></style>
+<style>
+.cursor {
+  height: 1.5rem;
+  width: 2px;
+  margin-left: 2px;
+  /* background: white; */
+  animation: blinkTextCursor 800ms infinite;
+}
+
+@keyframes blinkTextCursor {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+</style>
