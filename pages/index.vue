@@ -1,12 +1,14 @@
 <template>
-  <div class="bg-black h-full">
+  <div class="bg-black h-full mb-16 md:mb-0">
     <div class="h-screen w-full grid grid-cols-6 grid-rows-4 pt-12 text-white">
       <div
         class="col-start-1 md:col-start-2 col-span-6 md:col-span-4 row-span-4 h-full"
       >
         <!-- <Logo /> -->
         <div class="h-full grid grid-cols-1 grid-rows-4">
-          <div class="font-mono text-xl row-span-3 pt-20 p-1/12 my-auto">
+          <div
+            class="font-mono text-xl sm:text-2xl md:text-3xl row-span-3 pt-20 p-1/12 my-auto"
+          >
             <p class="text-white mb-8">
               Hi, I'm Stuart Robin McCulloch.
             </p>
@@ -31,17 +33,21 @@
     <div id="portfolio">
       <Portfolio />
     </div>
+    <div class="">
+      <Technologies />
+    </div>
   </div>
 </template>
 
 <script>
 import ScrollMore from '~/components/ScrollMore'
 import Portfolio from '~/components/Portfolio'
+import Technologies from '~/components/Technologies'
 // import Logo from '~/components/Logo'
 export default {
-  components: { ScrollMore, Portfolio },
+  components: { ScrollMore, Portfolio, Technologies },
   data: () => ({
-    texts: ['build websites...', 'build experiences...?', 'shape experiences.'],
+    texts: ['make websites.', 'build websites...', 'build experiences.'],
     speed: 100,
     display: ''
   }),

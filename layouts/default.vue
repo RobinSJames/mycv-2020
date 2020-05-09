@@ -1,6 +1,12 @@
 <template>
   <div class="relative">
     <SocialNav class="absolute top-0" />
+    <div class="absolute hidden w-full flex justify-center mt-24">
+      <codersrank-widget
+        username="robinsjames"
+        class="w-full px-1/12"
+      ></codersrank-widget>
+    </div>
     <nuxt />
     <MobileNavBar class="fixed bottom-0 md:hidden" />
   </div>

@@ -9,7 +9,8 @@ module.exports = {
     extend: {
       colors: {
         black: '#000000',
-        white: '#ffffff'
+        white: '#ffffff',
+        orange: '#ff9f00'
       },
       spacing: {
         'x-tiny': '0.1rem',
