@@ -23,15 +23,18 @@
             href="https://stuartmccullochcv.herokuapp.com/"
             target="_blank"
             rel="noopener noreferrer"
-            class="bg-black rounded-full px-6 py-2 hover:scale-125 cursor-pointer"
+            class="text-sm font-bold bg-black rounded-full px-6 py-2 hover:scale-125 cursor-pointer"
           >
-            Bebla
+            OPEN
           </a>
         </div>
       </div>
     </div>
-    <div class="col-start-1 md:col-start-2 col-span-6 p-1/12">
-      <div class="">
+    <div class="col-start-1 md:col-start-2 col-span-6 p-1/12 pt-20">
+      <ScrollMore />
+    </div>
+    <div class="col-start-1 md:col-start-2 col-span-6 p-1/12 py-20">
+      <div class="mb-12">
         <h3 class="text-3xl">Tech used</h3>
         <div class="flex flex-wrap">
           <div
@@ -59,18 +62,28 @@
           </div>
         </div>
       </div>
-      <p class="col-span-6 z-10">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
-        itaque ratione sint doloribus eveniet sed, consequuntur iure quasi sunt
-        aliquid totam odio voluptate dolorum similique tempore reiciendis iste
-        labore nostrum.
-      </p>
+      <div>
+        <h3 class="text-3xl tracking-widest">Description</h3>
+        <p class="col-span-6 z-10">
+          The concept of this app is simple. Select a category, select an amount
+          of desired questions, then the difficulty level and finally click
+          play. The app boast 20 plus categories to choose from thanks to the
+          Open Trivia DB API. I know - its awesome! "But what happens when I get
+          stuck in for hours on end", you ask. "Surely there are a limited
+          amount of question?" You're 100% correct, the questions are limited,
+          but thankfully Open Trivia DB has provided an access token to prevent
+          any repeat questions happening. So don't worry about any unwated
+          repitions. Go ahead an check it out.
+        </p>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
+import ScrollMore from '~/components/ScrollMore'
 export default {
+  components: { ScrollMore },
   data: () => ({
     technologies: [
       {

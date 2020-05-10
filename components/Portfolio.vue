@@ -1,5 +1,6 @@
 <template>
   <section class="min-h-screen text-white mb-16 md:mb-0 p-1/12">
+    <h3 class="text-xl tracking-widest">Projects</h3>
     <div
       v-for="(project, index) in projects"
       :key="index"
