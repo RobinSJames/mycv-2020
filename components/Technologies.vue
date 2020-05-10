@@ -164,33 +164,40 @@ export default {
       },
       {
         id: 4,
+        colour: '#47daf9',
+        strokePercentage: 65,
+        logoLink:
+          'https://i0.wp.com/invotra.com/wp-content/uploads/2019/11/React-native-logo-transparent@2x.png?fit=300%2C300&ssl=1'
+      },
+      {
+        id: 5,
         colour: '#dd0031',
         strokePercentage: 50,
         logoLink:
           'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/512px-Angular_full_color_logo.svg.png'
       },
       {
-        id: 5,
+        id: 6,
         colour: '#222222',
-        strokePercentage: 70,
+        strokePercentage: 80,
         logoLink:
           'https://upload.wikimedia.org/wikipedia/commons/archive/6/64/20170429090804%21Expressjs.png'
       },
       {
-        id: 6,
+        id: 7,
         colour: '#003021',
         strokePercentage: 50,
         logoLink:
           'https://upload.wikimedia.org/wikipedia/de/thumb/0/0e/Django-logo.svg/504px-Django-logo.svg.png'
       },
       {
-        id: 7,
+        id: 8,
         colour: '#222222',
         strokePercentage: 50,
         logoLink: 'https://www.fullstackpython.com/img/logos/flask.jpg'
       },
       {
-        id: 8,
+        id: 9,
         colour: '#ff3857',
         strokePercentage: 50,
         logoLink:

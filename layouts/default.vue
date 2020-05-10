@@ -1,5 +1,5 @@
 <template>
-  <div class="relative">
+  <div class="relative bg-black">
     <SocialNav class="absolute top-0" />
     <div class="absolute hidden w-full flex justify-center mt-24">
       <codersrank-widget
@@ -7,7 +7,7 @@
         class="w-full px-1/12"
       ></codersrank-widget>
     </div>
-    <nuxt />
+    <nuxt class="" />
     <MobileNavBar class="fixed bottom-0 md:hidden" />
   </div>
 </template>

@@ -10,7 +10,10 @@ module.exports = {
       colors: {
         black: '#000000',
         white: '#ffffff',
-        orange: '#ff9f00'
+        orange: '#ff9f00',
+        red: '#ff0000',
+        yellow: '#fdc029',
+        'dark-gray': '#333333'
       },
       spacing: {
         'x-tiny': '0.1rem',
@@ -51,6 +54,11 @@ module.exports = {
       }
     }
   },
-  variants: {},
+  variants: {
+    textColor: ['responsive', 'hover', 'focus', 'group-hover'],
+    opacity: ['responsive', 'hover', 'focus', 'group-hover'],
+
+    backgroundColor: ['responsive', 'hover', 'focus', 'group-hover']
+  },
   plugins: []
 }
