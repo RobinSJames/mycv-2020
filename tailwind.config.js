@@ -13,7 +13,8 @@ module.exports = {
         orange: '#ff9f00',
         red: '#ff0000',
         yellow: '#fdc029',
-        'dark-gray': '#333333'
+        'dark-gray': '#333333',
+        'off-white': '#eeeeee'
       },
       spacing: {
         'x-tiny': '0.1rem',
@@ -50,7 +51,8 @@ module.exports = {
         '8/12': '66.666667%',
         '9/12': '75%',
         '10/12': '83.333333%',
-        '11/12': '91.666667%'
+        '11/12': '91.666667%',
+        '5pec': '5%'
       }
     }
   },

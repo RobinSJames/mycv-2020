@@ -7,7 +7,7 @@
         <!-- <Logo /> -->
         <div class="h-full grid grid-cols-1 grid-rows-4">
           <div
-            class="font-mono text-xl sm:text-2xl md:text-3xl row-span-3 pt-20 p-1/12 my-auto"
+            class="font-mono text-xl sm:text-2xl md:text-3xl row-span-2 p-1/12 my-auto"
           >
             <p class="text-white mb-8">
               Hi, I'm Stuart Robin McCulloch.
@@ -24,17 +24,21 @@
               </div>
             </div>
           </div>
-          <div class="flex md:items-center row-span-1">
+          <div class="flex items-center md:items-end row-span-1">
             <ScrollMore />
           </div>
         </div>
       </div>
     </div>
-    <div id="portfolio">
-      <Portfolio />
+    <div id="portfolio" class="grid grid-cols-6">
+      <Portfolio
+        class="col-start-1 md:col-start-2 lg:col-start-2 col-span-6 lg:col-span-5"
+      />
     </div>
-    <div class="">
-      <Technologies />
+    <div class="grid grid-cols-6">
+      <Technologies
+        class="col-start-1 md:col-start-2 lg:col-start-2 col-span-6 lg:col-span-5"
+      />
     </div>
   </div>
 </template>

@@ -1,6 +1,8 @@
 <template>
-  <div class="text-white pt-24 pb-20">
-    <div class="relative h-80 overflow-hidden">
+  <div class="grid grid-cols-6 text-white pt-24 pb-20">
+    <div
+      class="col-start-1 md:col-start-2 col-span-6 relative h-80 overflow-hidden"
+    >
       <div class="absolute top-0 h-80 flex justify-center w-full bg-black">
         <img
           src="/icon.png"
@@ -26,8 +28,8 @@
         </div>
       </div>
     </div>
-    <div class="grid grid-cols-6 p-1/12">
-      <div class="col-span-6">
+    <div class="col-start-1 md:col-start-2 col-span-6 p-1/12">
+      <div class="">
         <h3 class="text-3xl">Tech used</h3>
         <div class="flex flex-wrap">
           <div
@@ -35,16 +37,23 @@
             :key="technology.id"
             class="relative w-1/2 p-1/12"
           >
-            <img
-              :src="technology.img"
-              alt=""
-              class="w-full h-full object-fit object-cover rounded-full bg-dark-gray opacity-50"
-            />
-            <p
-              class="absolute top-0 left-0 h-full w-full flex justify-center items-center text-center font-bold p-2/12"
+            <a
+              :href="technology.link"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="outline-none"
             >
-              {{ technology.title }}
-            </p>
+              <img
+                :src="technology.img"
+                alt=""
+                class="w-full h-full object-fit object-cover rounded-full bg-off-white opacity-50 cursor-pointer"
+              />
+              <p
+                class="absolute top-0 left-0 h-full w-full flex justify-center items-center text-center font-bold p-2/12"
+              >
+                {{ technology.title }}
+              </p>
+            </a>
           </div>
         </div>
       </div>
@@ -62,23 +71,31 @@
 export default {
   data: () => ({
     technologies: [
-      { id: 1, title: 'Vue', img: 'https://vuejs.org/images/logo.png' },
+      {
+        id: 1,
+        title: 'Vue',
+        img: 'https://vuejs.org/images/logo.png',
+        link: 'https://vuejs.org/'
+      },
       {
         id: 2,
         title: 'Bootstrap Vue',
         img:
-          'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/512px-Bootstrap_logo.svg.png'
+          'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/512px-Bootstrap_logo.svg.png',
+        link: 'https://bootstrap-vue.org/'
       },
       {
         id: 3,
         title: 'TriviaDB API',
-        img: 'https://opentdb.com/images/logo.png'
+        img: 'https://opentdb.com/images/logo.png',
+        link: 'https://opentdb.com/'
       },
       {
         id: 4,
         title: 'lodash',
         img:
-          'https://upload.wikimedia.org/wikipedia/en/thumb/6/6f/Lodash.svg/220px-Lodash.svg.png'
+          'https://upload.wikimedia.org/wikipedia/en/thumb/6/6f/Lodash.svg/220px-Lodash.svg.png',
+        link: 'https://lodash.com/'
       }
     ]
   })
