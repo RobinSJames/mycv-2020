@@ -1,7 +1,7 @@
 <template>
-  <div class="grid grid-cols-6 text-white pb-20">
+  <div class="grid grid-cols-6 text-white pb-20 pt-5">
     <div
-      class="col-start-1 md:col-start-2 col-span-6 relative h-80 lg:h-100 overflow-hidden"
+      class="col-start-1 md:col-start-2 col-span-6 md:col-span-4 relative h-80 lg:h-100 overflow-hidden"
     >
       <div
         class="absolute top-0 h-80 lg:h-100 flex justify-center w-full bg-black"
@@ -20,7 +20,7 @@
             using a 3rd party API. Test your general knowledge
           </p>
           <a
-            href="https://stuartmccullochcv.herokuapp.com/"
+            href="https://bebla.netlify.app/"
             target="_blank"
             rel="noopener noreferrer"
             class="text-sm font-bold bg-black rounded-full px-6 py-2 hover:scale-125 cursor-pointer"

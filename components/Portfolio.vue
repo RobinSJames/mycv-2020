@@ -8,8 +8,8 @@
       @click="animate(index, project.route)"
     >
       <p
-        class="h-full flex items-center text-2xl md:text-6xl group-hover:text-yellow z-50"
-        :class="{ 'animate-text text-yellow': animationIndex === index }"
+        class="h-full flex items-center text-2xl md:text-6xl z-50"
+        :class="{ 'animate-text': animationIndex === index }"
       >
         <span class="">{{ project.name }}</span>
       </p>
@@ -19,7 +19,7 @@
         class="w-64 md:w-80 absolute bottom-0 right-0 sm:mr-10 md:mr-12 lg:mr-24"
         :class="
           animationIndex === index
-            ? 'animate-image opacity-50 z-20'
+            ? 'animate-image opacity-75 z-20'
             : 'opacity-25 group-hover:opacity-50'
         "
       />
@@ -34,10 +34,10 @@ export default {
     animationIndex: -1,
     projects: [
       { name: 'Bebla: trivia game', route: 'bebla' },
-      { name: 'Ambiance Spa: spa website', route: 'spa' },
+      { name: 'Ambiance Spa: website', route: 'spa' },
       { name: 'MERN: expense tracker', route: 'bebla' },
       { name: 'MERN: app', route: 'bebla' },
-      { name: 'CV: year 2019', route: 'cv2019' },
+      { name: 'CV: 2019', route: 'cv2019' },
       { name: 'Webcrawler: frontend', route: 'bebla' }
     ]
   }),
@@ -46,7 +46,7 @@ export default {
       this.animationIndex = x
       setTimeout(() => {
         this.$router.push(`/projects/${y}`)
-        console.log('Hit')
+        // console.log('Hit')
       }, 1550)
     }
   }

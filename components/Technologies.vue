@@ -283,6 +283,9 @@ export default {
   mounted() {
     window.addEventListener('scroll', this.updateScrollAnimation)
   },
+  beforeDestroy() {
+    window.removeEventListener('scroll', this.updateScrollAnimation)
+  },
   methods: {
     updateScrollAnimation() {
       this.webtechPosition = document.getElementById('webtech').offsetTop

@@ -21,32 +21,22 @@
       </a>
     </div>
     <div
-      class="hidden md:block flex flex-col justify-between items-center md:mb-4"
+      class="hidden md:block flex flex-col justify-between items-center md:mb-4 cursor-pointer"
+      @click="$router.push('/')"
     >
-      <a href="https://twitter.com/xaxacara" target="_blank">
-        <p>HOME</p>
-      </a>
+      <p>HOME</p>
     </div>
     <div
-      class="hidden md:block flex flex-col justify-between items-center md:mb-4"
+      class="hidden md:block flex flex-col justify-between items-center md:mb-4 cursor-pointer"
+      @click="$router.push('/about')"
     >
-      <a href="https://twitter.com/xaxacara" target="_blank">
-        <p>WORK</p>
-      </a>
+      <p>ABOUT ME</p>
     </div>
     <div
-      class="hidden md:block flex flex-col justify-between items-center md:mb-4"
+      class="hidden md:block flex flex-col justify-between items-center h-full cursor-pointer"
+      @click="$router.push('/contact')"
     >
-      <a href="https://twitter.com/xaxacara" target="_blank">
-        <p>ABOUT ME</p>
-      </a>
-    </div>
-    <div
-      class="hidden md:block flex flex-col justify-between items-center h-full"
-    >
-      <a href="https://twitter.com/xaxacara" target="_blank">
-        <p>CONTACT ME</p>
-      </a>
+      <p>CONTACT ME</p>
     </div>
   </div>
 </template>
