@@ -1,21 +1,22 @@
 <template>
   <div class="p-1/12">
-    <div class="mb-10 lg:mb-20">
+    <div id="webtech" class="mb-10 lg:mb-20">
       <h2 class="text-xl sm:text-4xl md:text5xl text-white tracking-widest">
         Web Stack
       </h2>
-      <div ref="webtech" class="flex flex-wrap">
+      <div class="flex flex-wrap">
         <TechCards
           v-for="technology in webTechnologies"
           :key="technology.id"
           :colour="technology.colour"
           :logo-link="technology.logoLink"
           :stroke-percentage="technology.strokePercentage"
+          :animate="webtechAnimate"
           class="w-1/2 sm:w-1/3 lg:w-1/5"
         />
       </div>
     </div>
-    <div ref="frameworks" class="mb-10 lg:mb-20">
+    <div id="frameworks" class="mb-10 lg:mb-20">
       <h2 class="text-xl sm:text-4xl md:text5xl text-white tracking-widest">
         Web Frameworks
       </h2>
@@ -26,11 +27,12 @@
           :colour="technology.colour"
           :logo-link="technology.logoLink"
           :stroke-percentage="technology.strokePercentage"
+          :animate="frameworksAnimate"
           class="w-1/2 sm:w-1/3 lg:w-1/5"
         />
       </div>
     </div>
-    <div class="mb-10 lg:mb-20">
+    <div id="cssframeworks" class="mb-10 lg:mb-20">
       <h2 class="text-xl sm:text-4xl md:text5xl text-white tracking-widest">
         CSS Frameworks
       </h2>
@@ -41,11 +43,12 @@
           :colour="technology.colour"
           :logo-link="technology.logoLink"
           :stroke-percentage="technology.strokePercentage"
+          :animate="cssframeworksAnimate"
           class="w-1/2 sm:w-1/3 lg:w-1/5"
         />
       </div>
     </div>
-    <div class="mb-10 lg:mb-20">
+    <div id="vcontrol" class="mb-10 lg:mb-20">
       <h2 class="text-xl sm:text-4xl md:text5xl text-white tracking-widest">
         Version Control
       </h2>
@@ -56,11 +59,12 @@
           :colour="technology.colour"
           :logo-link="technology.logoLink"
           :stroke-percentage="technology.strokePercentage"
+          :animate="vcontrolAnimate"
           class="w-1/2 sm:w-1/3 lg:w-1/5"
         />
       </div>
     </div>
-    <div class="mb-10 lg:mb-20">
+    <div id="designkit" class="mb-10 lg:mb-20">
       <h2 class="text-xl sm:text-4xl md:text5xl text-white tracking-widest">
         Design Kit
       </h2>
@@ -71,11 +75,12 @@
           :colour="technology.colour"
           :logo-link="technology.logoLink"
           :stroke-percentage="technology.strokePercentage"
+          :animate="designkitAnimate"
           class="w-1/2 sm:w-1/3 lg:w-1/5"
         />
       </div>
     </div>
-    <div class="mb-10 lg:mb-20">
+    <div id="othertech" class="mb-10 lg:mb-20">
       <h2 class="text-xl sm:text-4xl md:text5xl text-white tracking-widest">
         Other Tech
       </h2>
@@ -86,6 +91,7 @@
           :colour="technology.colour"
           :logo-link="technology.logoLink"
           :stroke-percentage="technology.strokePercentage"
+          :animate="othertechAnimate"
           class="w-1/2 sm:w-1/3 lg:w-1/5"
         />
       </div>
@@ -98,6 +104,19 @@ import TechCards from '~/components/TechCards'
 export default {
   components: { TechCards },
   data: () => ({
+    scrollPosition: null,
+    webtechAnimate: false,
+    webtechPosition: 0,
+    frameworksAnimate: false,
+    frameworksPosition: 0,
+    cssframeworksAnimate: false,
+    cssframeworksPosition: 0,
+    vcontrolAnimate: false,
+    vcontrolPosition: 0,
+    designkitAnimate: false,
+    designkitPosition: 0,
+    othertechAnimate: false,
+    othertechPosition: 0,
     webTechnologies: [
       {
         id: 1,
@@ -262,12 +281,66 @@ export default {
     ]
   }),
   mounted() {
-    this.log()
+    window.addEventListener('scroll', this.updateScrollAnimation)
   },
   methods: {
-    log() {
-      console.log(this.$refs.webtech.getBoundingClientRect().top)
-      console.log(this.$refs.frameworks.getBoundingClientRect().top)
+    updateScrollAnimation() {
+      this.webtechPosition = document.getElementById('webtech').offsetTop
+      this.frameworksPosition = document.getElementById('frameworks').offsetTop
+      this.cssframeworksPosition = document.getElementById(
+        'cssframeworks'
+      ).offsetTop
+      this.vcontrolPosition = document.getElementById('vcontrol').offsetTop
+      this.designkitPosition = document.getElementById('designkit').offsetTop
+      this.othertechPosition = document.getElementById('othertech').offsetTop
+      this.scrollPosition = window.scrollY
+      const screenHeight = window.screen.height
+      const animationHieght = (screenHeight / 5) * 3
+      if (this.webtechPosition) {
+        if (this.scrollPosition > this.webtechPosition - animationHieght) {
+          this.webtechAnimate = true
+        } else {
+          this.webtechAnimate = false
+        }
+      }
+      if (this.frameworksPosition) {
+        if (this.scrollPosition > this.frameworksPosition - animationHieght) {
+          this.frameworksAnimate = true
+        } else {
+          this.frameworksAnimate = false
+        }
+      }
+      if (this.cssframeworksPosition) {
+        if (
+          this.scrollPosition >
+          this.cssframeworksPosition - animationHieght
+        ) {
+          this.cssframeworksAnimate = true
+        } else {
+          this.cssframeworksAnimate = false
+        }
+      }
+      if (this.vcontrolPosition) {
+        if (this.scrollPosition > this.vcontrolPosition - animationHieght) {
+          this.vcontrolAnimate = true
+        } else {
+          this.vcontrolAnimate = false
+        }
+      }
+      if (this.designkitPosition) {
+        if (this.scrollPosition > this.designkitPosition - animationHieght) {
+          this.designkitAnimate = true
+        } else {
+          this.designkitAnimate = false
+        }
+      }
+      if (this.othertechPosition) {
+        if (this.scrollPosition > this.othertechPosition - animationHieght) {
+          this.othertechAnimate = true
+        } else {
+          this.othertechAnimate = false
+        }
+      }
     }
   }
 }

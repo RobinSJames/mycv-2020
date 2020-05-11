@@ -17,7 +17,7 @@
           a 15.9155 15.9155 0 0 1 0 -31.831"
       />
       <path
-        :class="animate ? 'circle' : ''"
+        :class="animate ? 'circle' : 'hidden'"
         :stroke-dasharray="`${strokePercentage}, 100`"
         d="M18 2.0845
           a 15.9155 15.9155 0 0 1 0 31.831
@@ -34,7 +34,10 @@
       <!-- <text x="18" y="20.35" class="text-white">30%</text> -->
     </svg>
     <div class="absolute top-0 w-full h-full flex justify-center items-center">
-      <p class="text-white text-base sm:text-2xl md:text-3xl lg:text-4xl">
+      <p
+        v-if="animate"
+        class="text-white text-base sm:text-2xl md:text-3xl lg:text-4xl"
+      >
         {{ strokePercentage }}%
       </p>
     </div>
