@@ -7,7 +7,7 @@
         class="absolute top-0 h-80 lg:h-100 flex justify-center w-full bg-black"
       >
         <img
-          src="/images/spa.png"
+          src="/icon.png"
           alt=""
           class="w-full object-fit object-cover opacity-25"
         />
@@ -16,12 +16,10 @@
         >
           <h3 class="text-xl tracking-widest mb-2">Ambiance Spa</h3>
           <p class="text-sm text-center mb-4">
-            A spa PWA created using the MEVN (aka VeNom) stack. Users can make
-            bookings, order products, leave reviews and login and sign up.
+            Currently under construction
           </p>
           <a
-            href="https://mockspa.herokuapp.com/"
-            target="_blank"
+            href="#"
             rel="noopener noreferrer"
             class="text-sm font-bold bg-black rounded-full px-6 py-2 hover:scale-125 cursor-pointer"
           >
@@ -65,15 +63,7 @@
       <div>
         <h3 class="text-3xl tracking-widest">Description</h3>
         <p class="col-span-6 z-10">
-          The concept of this app is simple. Select a category, select an amount
-          of desired questions, then the difficulty level and finally click
-          play. The app boast 20 plus categories to choose from thanks to the
-          Open Trivia DB API. I know - its awesome! "But what happens when I get
-          stuck in for hours on end", you ask. "Surely there are a limited
-          amount of question?" You're 100% correct, the questions are limited,
-          but thankfully Open Trivia DB has provided an access token to prevent
-          any repeat questions happening. So don't worry about any unwated
-          repitions. Go ahead an check it out.
+          LOADING...
         </p>
       </div>
     </div>

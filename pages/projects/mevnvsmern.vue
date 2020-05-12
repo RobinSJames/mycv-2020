@@ -7,14 +7,14 @@
         class="absolute top-0 h-80 lg:h-100 flex justify-center w-full bg-black"
       >
         <img
-          src="/images/spa.png"
+          src="/images/mevnmern.jpeg"
           alt=""
           class="w-full object-fit object-cover opacity-25"
         />
         <div
           class="absolute top-0 flex flex-col justify-center items-center h-full w-full p-1/12 md:px-1/6"
         >
-          <h3 class="text-xl tracking-widest mb-2">Ambiance Spa</h3>
+          <h3 class="text-xl tracking-widest mb-2">MEVN vs MERN</h3>
           <p class="text-sm text-center mb-4">
             A spa PWA created using the MEVN (aka VeNom) stack. Users can make
             bookings, order products, leave reviews and login and sign up.
@@ -30,10 +30,14 @@
         </div>
       </div>
     </div>
-    <div class="col-start-1 md:col-start-2 col-span-6 p-1/12 pt-20">
+    <div
+      class="col-start-1 md:col-start-2 col-span-6 md:col-span-4 p-1/12 pt-20"
+    >
       <ScrollMore />
     </div>
-    <div class="col-start-1 md:col-start-2 col-span-6 p-1/12 py-20">
+    <div
+      class="col-start-1 md:col-start-2 col-span-6 md:col-span-4 p-1/12 py-20"
+    >
       <div class="mb-12">
         <h3 class="text-3xl">Tech used</h3>
         <div class="flex flex-wrap">

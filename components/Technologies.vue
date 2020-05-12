@@ -1,5 +1,8 @@
 <template>
   <div class="p-1/12">
+    <h3 class="text-white text-4xl tracking-widest underline mb-1/12">
+      Technologies
+    </h3>
     <div id="webtech" class="mb-10 lg:mb-20">
       <h2 class="text-xl sm:text-4xl md:text5xl text-white tracking-widest">
         Web Stack

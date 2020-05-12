@@ -7,7 +7,7 @@
         class="absolute top-0 h-80 lg:h-100 flex justify-center w-full bg-black"
       >
         <img
-          src="/icon.png"
+          src="/images/cv2019.png"
           alt=""
           class="w-full object-fit object-cover opacity-25"
         />
@@ -71,7 +71,11 @@
           Instead of making the standard cv in a PDF format I opted for
           something that would engage my potential, future employer. Walk the
           avatar version of Stuart throughout his daily morning tasks and view
-          his CV on his desktop once completed.
+          his CV on his desktop once completed.<br /><br />
+          <span class="text-red">CAUTION!!!</span><br />
+          This website was not created with a "mobile-first" mindset. Any
+          screens with 1366 x 768 resolution or higher should be able to view
+          the content more comfortably than those using lower resolutions.
         </p>
       </div>
     </div>

@@ -1,6 +1,6 @@
 <template>
   <section class="min-h-screen text-white mb-16 md:mb-0 p-1/12">
-    <h3 class="text-xl tracking-widest">Projects</h3>
+    <h3 class="text-4xl tracking-widest underline">Projects</h3>
     <div
       v-for="(project, index) in projects"
       :key="index"
@@ -14,7 +14,7 @@
         <span class="">{{ project.name }}</span>
       </p>
       <img
-        src="icon.png"
+        :src="project.img"
         alt="./icon.png"
         class="w-64 md:w-80 absolute bottom-0 right-0 sm:mr-10 md:mr-12 lg:mr-24"
         :class="
@@ -33,12 +33,28 @@ export default {
   data: () => ({
     animationIndex: -1,
     projects: [
-      { name: 'Bebla: trivia game', route: 'bebla' },
-      { name: 'Ambiance Spa: website', route: 'spa' },
-      { name: 'MERN: expense tracker', route: 'bebla' },
-      { name: 'MERN: app', route: 'bebla' },
-      { name: 'CV: 2019', route: 'cv2019' },
-      { name: 'Webcrawler: frontend', route: 'bebla' }
+      { name: 'Bebla: Vue', route: 'bebla', img: '/images/bebla.png' },
+      {
+        name: 'Ambiance Spa: Mevn',
+        route: 'spa',
+        img: '/images/spa.png'
+      },
+      {
+        name: 'Expense tracker: React',
+        route: 'expense-tracker',
+        img: '/images/expense-tracker-react.png'
+      },
+      {
+        name: 'CRUD: mern vs mevn',
+        route: 'mevnvsmern',
+        img: '/images/mevnmern.jpeg'
+      },
+      { name: 'CV: 2019', route: 'cv2019', img: '/images/cv2019.png' },
+      {
+        name: 'Webcrawler: Nodejs',
+        route: 'webcrawler',
+        img: '/icon.png'
+      }
     ]
   }),
   methods: {

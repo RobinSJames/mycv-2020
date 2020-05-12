@@ -28,15 +28,29 @@
     </div>
     <div
       class="hidden md:block flex flex-col justify-between items-center md:mb-4 cursor-pointer"
+      @click="$router.push('/#portfolio')"
+    >
+      <p>PORTFOLIO</p>
+    </div>
+    <div
+      class="hidden md:block flex flex-col justify-between items-center md:mb-4 cursor-pointer"
       @click="$router.push('/about')"
     >
       <p>ABOUT ME</p>
     </div>
     <div
-      class="hidden md:block flex flex-col justify-between items-center h-full cursor-pointer"
-      @click="$router.push('/contact')"
+      class="hidden md:block flex flex-col justify-between items-center h-full md:mb-4 cursor-pointer"
     >
-      <p>CONTACT ME</p>
+      <a href="mailto:robinjamesauthor@gmail.com?subject=Your CV intrigued me">
+        <p>EMAIL</p>
+      </a>
+    </div>
+    <div
+      class="hidden md:block flex flex-col justify-between items-center h-full cursor-pointer"
+    >
+      <a href="tel:+258846647680">
+        <p>PHONE</p>
+      </a>
     </div>
   </div>
 </template>

@@ -7,7 +7,7 @@
         class="absolute top-0 h-80 lg:h-100 flex justify-center w-full bg-black"
       >
         <img
-          src="/icon.png"
+          src="/images/bebla.png"
           alt=""
           class="w-full object-fit object-cover opacity-25"
         />
