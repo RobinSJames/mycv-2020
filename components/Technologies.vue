@@ -203,7 +203,7 @@ export default {
         colour: '#222222',
         strokePercentage: 80,
         logoLink:
-          'https://upload.wikimedia.org/wikipedia/commons/archive/6/64/20170429090804%21Expressjs.png'
+          'https://i7.pngguru.com/preview/925/447/818/express-js-node-js-javascript-mongodb-node-js.jpg'
       },
       {
         id: 7,

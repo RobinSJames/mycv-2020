@@ -45,7 +45,7 @@ export default {
         img: '/images/expense-tracker-react.png'
       },
       {
-        name: 'CRUD: mern vs mevn',
+        name: 'CRUD: mevn vs mern',
         route: 'mevnvsmern',
         img: '/images/mevnmern.jpeg'
       },
@@ -77,14 +77,14 @@ export default {
   animation: scale 1.5s ease-in 0s forwards 1 normal running;
 }
 
-@keyframes slide {
+/* @keyframes slide {
   0% {
     transform: translateX(0px);
     opacity: 1;
   }
-  /* 50% {
+  50% {
     background-color: orange;
-  } */
+  }
   100% {
     opacity: 0;
     transform: translate(600px) scale(1.5);
@@ -94,11 +94,11 @@ export default {
   0% {
     transform: scale(1);
   }
-  /* 50% {
+  50% {
     background-color: orange;
-  } */
+  }
   100% {
     transform: translateX(-400px) scale(5);
   }
-}
+} */
 </style>

@@ -16,17 +16,27 @@
         >
           <h3 class="text-xl tracking-widest mb-2">MEVN vs MERN</h3>
           <p class="text-sm text-center mb-4">
-            A spa PWA created using the MEVN (aka VeNom) stack. Users can make
-            bookings, order products, leave reviews and login and sign up.
+            I present you with the Battle of the frameworks. Vue and React go
+            toe-to-toe in a simple CRUD match
           </p>
-          <a
-            href="https://mockspa.herokuapp.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="text-sm font-bold bg-black rounded-full px-6 py-2 hover:scale-125 cursor-pointer"
-          >
-            OPEN
-          </a>
+          <div class="w-full flex justify-between">
+            <a
+              href="https://whispering-lake-72474.herokuapp.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-sm font-bold bg-black rounded-full px-6 py-2 hover:scale-125 cursor-pointer"
+            >
+              MEVN
+            </a>
+            <a
+              href="https://calm-falls-55639.herokuapp.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-sm font-bold bg-black rounded-full px-6 py-2 hover:scale-125 cursor-pointer"
+            >
+              MERN
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -98,23 +108,24 @@ export default {
       },
       {
         id: 2,
-        title: 'Bootstrap Vue',
+        title: 'React',
         img:
-          'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/512px-Bootstrap_logo.svg.png',
-        link: 'https://bootstrap-vue.org/'
+          'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/512px-React-icon.svg.png',
+        link: 'https://reactjs.org/'
       },
       {
         id: 3,
-        title: 'TriviaDB API',
-        img: 'https://opentdb.com/images/logo.png',
-        link: 'https://opentdb.com/'
+        title: 'Nodejs',
+        img:
+          'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/590px-Node.js_logo.svg.png',
+        link: 'https://nodejs.org/en/'
       },
       {
         id: 4,
-        title: 'lodash',
+        title: 'Express',
         img:
-          'https://upload.wikimedia.org/wikipedia/en/thumb/6/6f/Lodash.svg/220px-Lodash.svg.png',
-        link: 'https://lodash.com/'
+          'https://i7.pngguru.com/preview/925/447/818/express-js-node-js-javascript-mongodb-node-js.jpg',
+        link: 'https://expressjs.com/'
       }
     ]
   })

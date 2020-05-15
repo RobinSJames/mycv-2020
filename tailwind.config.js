@@ -16,6 +16,13 @@ module.exports = {
         'dark-gray': '#333333',
         'off-white': '#eeeeee'
       },
+      minHeight: {
+        '0': '0',
+        '1/4': '25%',
+        '1/2': '50%',
+        '3/4': '75%',
+        full: '100%'
+      },
       spacing: {
         'x-tiny': '0.1rem',
         tiny: '0.15rem',

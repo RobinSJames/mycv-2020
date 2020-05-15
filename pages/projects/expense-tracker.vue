@@ -7,20 +7,21 @@
         class="absolute top-0 h-80 lg:h-100 flex justify-center w-full bg-black"
       >
         <img
-          src="/images/spa.png"
+          src="/images/expense-tracker-react.png"
           alt=""
-          class="w-full object-fit object-cover opacity-25"
+          class="w-full h-full object-fit object-cover opacity-25"
         />
         <div
           class="absolute top-0 flex flex-col justify-center items-center h-full w-full p-1/12 md:px-1/6"
         >
-          <h3 class="text-xl tracking-widest mb-2">Ambiance Spa</h3>
+          <h3 class="text-xl tracking-widest mb-2">Expense Tracker</h3>
           <p class="text-sm text-center mb-4">
-            A spa PWA created using the MEVN (aka VeNom) stack. Users can make
-            bookings, order products, leave reviews and login and sign up.
+            Most people want financial freedom but if you fail to plan you plan
+            to fail. Now you can take the first step to planning your success
+            with an expense tracker built with React
           </p>
           <a
-            href="https://mockspa.herokuapp.com/"
+            href="https://expense-tracker-mern.herokuapp.com/"
             target="_blank"
             rel="noopener noreferrer"
             class="text-sm font-bold bg-black rounded-full px-6 py-2 hover:scale-125 cursor-pointer"
@@ -88,29 +89,10 @@ export default {
     technologies: [
       {
         id: 1,
-        title: 'Vue',
-        img: 'https://vuejs.org/images/logo.png',
-        link: 'https://vuejs.org/'
-      },
-      {
-        id: 2,
-        title: 'Bootstrap Vue',
+        title: 'React',
         img:
-          'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/512px-Bootstrap_logo.svg.png',
-        link: 'https://bootstrap-vue.org/'
-      },
-      {
-        id: 3,
-        title: 'TriviaDB API',
-        img: 'https://opentdb.com/images/logo.png',
-        link: 'https://opentdb.com/'
-      },
-      {
-        id: 4,
-        title: 'lodash',
-        img:
-          'https://upload.wikimedia.org/wikipedia/en/thumb/6/6f/Lodash.svg/220px-Lodash.svg.png',
-        link: 'https://lodash.com/'
+          'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/512px-React-icon.svg.png',
+        link: 'https://reactjs.org/'
       }
     ]
   })
