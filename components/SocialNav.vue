@@ -48,7 +48,7 @@
     <div
       class="hidden md:block flex flex-col justify-between items-center h-full cursor-pointer"
     >
-      <a href="tel:+258846647680">
+      <a href="tel:+27645161868">
         <p>PHONE</p>
       </a>
     </div>

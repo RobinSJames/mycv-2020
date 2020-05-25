@@ -33,12 +33,12 @@ export default {
   data: () => ({
     animationIndex: -1,
     projects: [
-      { name: 'Bebla: Vue', route: 'bebla', img: '/images/bebla.png' },
       {
         name: 'Ambiance Spa: Mevn',
         route: 'spa',
         img: '/images/spa.png'
       },
+      { name: 'Bebla: Vue', route: 'bebla', img: '/images/bebla.png' },
       {
         name: 'Expense tracker: React',
         route: 'expense-tracker',

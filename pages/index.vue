@@ -55,6 +55,7 @@ export default {
     speed: 100,
     display: ''
   }),
+  transition: 'fadeOpacity',
   mounted() {
     this.writeLoop()
   },
@@ -81,10 +82,10 @@ export default {
     async writeLoop() {
       for (let i = 0; i < this.texts.length; i++) {
         await this.type(this.texts[i])
-        await this.delay(4000)
+        await this.delay(1000)
         if (i !== this.texts.length - 1) {
           await this.reversType(this.texts[i])
-          await this.delay(1000)
+          await this.delay(50)
         }
       }
     }
@@ -93,6 +94,16 @@ export default {
 </script>
 
 <style>
+.fadeOpacity-enter-active,
+.fadeOpacity-leave-active {
+  transition: opacity 0.35s ease-out;
+}
+
+.fadeOpacity-enter,
+.fadeOpacity-leave-active {
+  opacity: 0;
+}
+
 .cursor {
   height: 1.5rem;
   width: 2px;
