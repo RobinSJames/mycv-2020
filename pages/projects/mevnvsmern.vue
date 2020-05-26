@@ -79,15 +79,13 @@
       <div>
         <h3 class="text-3xl tracking-widest">Description</h3>
         <p class="col-span-6 z-10">
-          The concept of this app is simple. Select a category, select an amount
-          of desired questions, then the difficulty level and finally click
-          play. The app boast 20 plus categories to choose from thanks to the
-          Open Trivia DB API. I know - its awesome! "But what happens when I get
-          stuck in for hours on end", you ask. "Surely there are a limited
-          amount of question?" You're 100% correct, the questions are limited,
-          but thankfully Open Trivia DB has provided an access token to prevent
-          any repeat questions happening. So don't worry about any unwated
-          repitions. Go ahead an check it out.
+          So I decided to allow these two frameworks prove which was worthy of
+          the heavyweight title. I created to extremely simple CRUD web apps and
+          the results are in. I am unfortunately going to be biased and say Vue
+          as I've been working with Vue for the past year and a half. That being
+          said looking at the npm trends list and looking at the libraries
+          available in react it's quite clear which is the most popular right
+          now.
         </p>
       </div>
     </div>

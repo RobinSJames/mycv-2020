@@ -31,7 +31,9 @@
         </div>
       </div>
     </div>
-    <div class="col-start-1 md:col-start-2 col-span-6 p-1/12 pt-20">
+    <div
+      class="col-start-1 md:col-start-2 col-span-6 md:col-span-4 p-1/12 pt-20"
+    >
       <ScrollMore />
     </div>
     <div class="col-start-1 md:col-start-2 col-span-6 p-1/12 py-20">
@@ -66,15 +68,11 @@
       <div>
         <h3 class="text-3xl tracking-widest">Description</h3>
         <p class="col-span-6 z-10">
-          The concept of this app is simple. Select a category, select an amount
-          of desired questions, then the difficulty level and finally click
-          play. The app boast 20 plus categories to choose from thanks to the
-          Open Trivia DB API. I know - its awesome! "But what happens when I get
-          stuck in for hours on end", you ask. "Surely there are a limited
-          amount of question?" You're 100% correct, the questions are limited,
-          but thankfully Open Trivia DB has provided an access token to prevent
-          any repeat questions happening. So don't worry about any unwated
-          repitions. Go ahead an check it out.
+          Set aside your financial worries and begin to take action with the
+          Mern Expense Tracker. its a simple and UI friendly tracker that
+          doesn't complicate any processes. Since there is no backend you'd be
+          forced to keep the tab open for eternity unfortunately. Send me an
+          email if you'd like to see a backend attached to this.
         </p>
       </div>
     </div>

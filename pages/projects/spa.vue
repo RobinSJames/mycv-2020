@@ -30,7 +30,9 @@
         </div>
       </div>
     </div>
-    <div class="col-start-1 md:col-start-2 col-span-6 p-1/12 pt-20">
+    <div
+      class="col-start-1 md:col-start-2 col-span-6 md:col-span-4 p-1/12 pt-20"
+    >
       <ScrollMore />
     </div>
     <div class="col-start-1 md:col-start-2 col-span-6 p-1/12 py-20">
@@ -65,15 +67,14 @@
       <div>
         <h3 class="text-3xl tracking-widest">Description</h3>
         <p class="col-span-6 z-10">
-          The concept of this app is simple. Select a category, select an amount
-          of desired questions, then the difficulty level and finally click
-          play. The app boast 20 plus categories to choose from thanks to the
-          Open Trivia DB API. I know - its awesome! "But what happens when I get
-          stuck in for hours on end", you ask. "Surely there are a limited
-          amount of question?" You're 100% correct, the questions are limited,
-          but thankfully Open Trivia DB has provided an access token to prevent
-          any repeat questions happening. So don't worry about any unwated
-          repitions. Go ahead an check it out.
+          This is a proposal that is in the works. The idea for this website was
+          to have it double down as an application as well - enter vue PWA. The
+          frontend is connect to an api written in expressjs and allows the
+          manager role to make edits to all routes while users are limited to
+          all GET and selected POST and PUT routes where the data is stored in
+          MongoDB. There are still a few additional features I'd like to add to
+          this web app before I could be 100% satisfied. I hope those additions
+          will be done before you read this.
         </p>
       </div>
     </div>

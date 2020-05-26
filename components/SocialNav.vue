@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex flex-row md:flex-col justify-around items-center w-full md:w-1/6 md:h-min-40 py-4 md:mt-20 text-white text-sm bg-black"
+    class="flex flex-row md:flex-col justify-around items-center w-full md:w-1/6 md:h-min-40 pb-4 md:mt-20 text-white text-sm bg-black"
   >
     <div class="flex flex-col justify-between items-center md:mb-10">
       <Logo />

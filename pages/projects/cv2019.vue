@@ -68,8 +68,9 @@
       <div>
         <h3 class="text-3xl tracking-widest">Description</h3>
         <p class="col-span-6 z-10">
-          Instead of making the standard cv in a PDF format I opted for
-          something that would engage my potential, future employer. Walk the
+          So back in 2019 when I had decided to ditch Java and jump onto
+          JavaScript I opted for something unconventional from the pdf/word
+          format that would engage my potential, future employer. Help guide the
           avatar version of Stuart throughout his daily morning tasks and view
           his CV on his desktop once completed.<br /><br />
           <span class="text-red">CAUTION!!!</span><br />

@@ -30,7 +30,9 @@
         </div>
       </div>
     </div>
-    <div class="col-start-1 md:col-start-2 col-span-6 p-1/12 pt-20">
+    <div
+      class="col-start-1 md:col-start-2 col-span-6 md:col-span-4 p-1/12 pt-20"
+    >
       <ScrollMore />
     </div>
     <div class="col-start-1 md:col-start-2 col-span-6 p-1/12 py-20">

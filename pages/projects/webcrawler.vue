@@ -14,7 +14,9 @@
         <div
           class="absolute top-0 flex flex-col justify-center items-center h-full w-full p-1/12 md:px-1/6"
         >
-          <h3 class="text-xl tracking-widest mb-2">Ambiance Spa</h3>
+          <h3 class="text-xl tracking-widest mb-2">
+            Web Crawler for Indeed.co.za
+          </h3>
           <p class="text-sm text-center mb-4">
             Currently under construction
           </p>
@@ -35,7 +37,7 @@
       <div class="mb-12">
         <h3 class="text-3xl">Tech used</h3>
         <div class="flex flex-wrap">
-          <div
+          <!-- <div
             v-for="technology in technologies"
             :key="technology.id"
             class="relative w-1/2 md:w-1/3 lg:w-1/4 p-1/12 md:p-5pec"
@@ -57,7 +59,7 @@
                 {{ technology.title }}
               </p>
             </a>
-          </div>
+          </div> -->
         </div>
       </div>
       <div>
