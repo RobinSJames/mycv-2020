@@ -64,12 +64,20 @@
           </div>
         </div>
       </div>
+      <div class="mb-4">
+        <h3 class="text-3xl tracking-widest">Features</h3>
+        <ul>
+          <li v-for="feature in features" :key="feature.id">
+            - {{ feature.title }}
+          </li>
+        </ul>
+      </div>
       <div>
         <h3 class="text-3xl tracking-widest">Description</h3>
         <p class="col-span-6 z-10">
           This is a proposal that is in the works. The idea for this website was
           to have it double down as an application as well - enter vue PWA. The
-          frontend is connect to an api written in expressjs and allows the
+          frontend is connected to an api written in expressjs and allows the
           manager role to make edits to all routes while users are limited to
           all GET and selected POST and PUT routes where the data is stored in
           MongoDB. There are still a few additional features I'd like to add to
@@ -89,22 +97,22 @@ export default {
     technologies: [
       {
         id: 1,
-        title: 'Vue',
+        title: 'Nuxt',
         img: 'https://vuejs.org/images/logo.png',
-        link: 'https://vuejs.org/'
+        link: 'nuxtjs.org/'
       },
       {
         id: 2,
-        title: 'Bootstrap Vue',
+        title: 'Tailwindcss',
         img:
-          'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/512px-Bootstrap_logo.svg.png',
-        link: 'https://bootstrap-vue.org/'
+          'https://seeklogo.com/images/T/tailwind-css-logo-5AD4175897-seeklogo.com.png',
+        link: 'https://tailwindcss.com/'
       },
       {
         id: 3,
-        title: 'TriviaDB API',
-        img: 'https://opentdb.com/images/logo.png',
-        link: 'https://opentdb.com/'
+        title: 'JWT',
+        img: 'https://jwt.io/img/pic_logo.svg',
+        link: 'https://jwt.io/'
       },
       {
         id: 4,
@@ -113,6 +121,14 @@ export default {
           'https://upload.wikimedia.org/wikipedia/en/thumb/6/6f/Lodash.svg/220px-Lodash.svg.png',
         link: 'https://lodash.com/'
       }
+    ],
+    features: [
+      { id: 1, title: 'Register' },
+      { id: 2, title: 'Login' },
+      { id: 3, title: 'User auth' },
+      { id: 4, title: 'Make booking' },
+      { id: 5, title: 'Add to cart' }
+      // { id: 4, title: 'Add to cart' }
     ]
   })
 }

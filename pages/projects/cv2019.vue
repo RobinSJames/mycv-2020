@@ -65,6 +65,14 @@
           </div>
         </div>
       </div>
+      <div class="mb-4">
+        <h3 class="text-3xl tracking-widest">Features</h3>
+        <ul>
+          <li v-for="feature in features" :key="feature.id">
+            - {{ feature.title }}
+          </li>
+        </ul>
+      </div>
       <div>
         <h3 class="text-3xl tracking-widest">Description</h3>
         <p class="col-span-6 z-10">
@@ -109,6 +117,11 @@ export default {
         img: 'https://scrollmagic.io/assets/img/demo_tophat.png',
         link: 'https://scrollmagic.io/'
       }
+    ],
+    features: [
+      { id: 1, title: 'Onscroll Animation' },
+      { id: 2, title: 'Draggable events' },
+      { id: 3, title: 'Interactive mini game' }
     ]
   })
 }

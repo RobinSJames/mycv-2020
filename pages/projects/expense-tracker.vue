@@ -65,6 +65,14 @@
           </div>
         </div>
       </div>
+      <div class="mb-4">
+        <h3 class="text-3xl tracking-widest">Features</h3>
+        <ul>
+          <li v-for="feature in features" :key="feature.id">
+            - {{ feature.title }}
+          </li>
+        </ul>
+      </div>
       <div>
         <h3 class="text-3xl tracking-widest">Description</h3>
         <p class="col-span-6 z-10">
@@ -92,6 +100,13 @@ export default {
           'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/512px-React-icon.svg.png',
         link: 'https://reactjs.org/'
       }
+    ],
+    features: [
+      { id: 1, title: 'Add income/expense' },
+      { id: 2, title: 'Delete income/expense' },
+      { id: 3, title: 'View History' }
+      // { id: 4, title: 'Add to cart' }
+      // { id: 4, title: 'Add to cart' }
     ]
   })
 }

@@ -76,6 +76,14 @@
           </div>
         </div>
       </div>
+      <div class="mb-4">
+        <h3 class="text-3xl tracking-widest">Features</h3>
+        <ul>
+          <li v-for="feature in features" :key="feature.id">
+            - {{ feature.title }}
+          </li>
+        </ul>
+      </div>
       <div>
         <h3 class="text-3xl tracking-widest">Description</h3>
         <p class="col-span-6 z-10">
@@ -125,6 +133,12 @@ export default {
           'https://i7.pngguru.com/preview/925/447/818/express-js-node-js-javascript-mongodb-node-js.jpg',
         link: 'https://expressjs.com/'
       }
+    ],
+    features: [
+      { id: 1, title: 'Create' },
+      { id: 2, title: 'Read' },
+      { id: 3, title: 'Update' },
+      { id: 4, title: 'Delete' }
     ]
   })
 }

@@ -64,6 +64,14 @@
           </div>
         </div>
       </div>
+      <div class="mb-4">
+        <h3 class="text-3xl tracking-widest">Features</h3>
+        <ul>
+          <li v-for="feature in features" :key="feature.id">
+            - {{ feature.title }}
+          </li>
+        </ul>
+      </div>
       <div>
         <h3 class="text-3xl tracking-widest">Description</h3>
         <p class="col-span-6 z-10">
@@ -114,6 +122,13 @@ export default {
           'https://upload.wikimedia.org/wikipedia/en/thumb/6/6f/Lodash.svg/220px-Lodash.svg.png',
         link: 'https://lodash.com/'
       }
+    ],
+    features: [
+      { id: 1, title: 'Select Category' },
+      { id: 2, title: 'Select Question range' },
+      { id: 3, title: 'Select Difficulty' },
+      { id: 4, title: 'Game timer' }
+      // { id: 4, title: 'Add to cart' }
     ]
   })
 }
